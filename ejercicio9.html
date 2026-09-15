@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Contacto | DevSolutions</title>
+    <link rel="stylesheet" href="css/ejercicio9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Contáctanos</h1>
+        <p class="subtitulo">Tienes dudas? Estamos aquí para ayudarte.</p>
+        <form class ="formulario">
+            <!-- Grupo 1: Datos Basicas -->
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nadya Avendaño" required>
+            </div>
+            <div class="grupo-doble">
+                <div class="grupo-formulario"> 
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="nadya.avendaño@example.com" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono <span>(Opcional)</span></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="xxx xxx xxxx">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" name="mensaje" placeholder="Escribe tu consulta aquí..." required></textarea>
+            </div>
+            <button type="submit" class="boton-enviar">Enviar mensaje <span>-></span></button>
+        </form>
+    </div>
+</body>
+</html>
