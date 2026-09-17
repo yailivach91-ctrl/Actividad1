@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Arreglos</title>
+    <script src="js/ejercicio15.js"></script>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario</h1>
+        <p>Datos estudiantiles</p>
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="numeros">Ingresar nombre:<br></label>
+                <input required type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="grupo-formulario">
+                <label for="numeros">Ingresar la calificacion:<br></label>
+                <input required type="number" id="calificacion" name="calificacion" placeholder="Ingresa la calificacion">
+            </div>
+            <button type="button" onclick="Agregar()" class="boton-calcular">Agregar</button>
+            <button type="button" onclick="Resultados()" class="boton-calcular">Resultados</button>
+            <label for="numeros"><br>Resultados:<br></label>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="califprom" name="califprom" placeholder="La calificacion promedio es">
+            </div>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="ecalifmayor" name="promedio" placeholder="Estudiante con la calificacion mas alta: ">
+            </div>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="ecalifmenor" name="ecalifmenor" placeholder="Estudiante con la calificacion mas baja: ">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

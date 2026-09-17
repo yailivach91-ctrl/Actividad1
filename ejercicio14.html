@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Arreglos</title>
+    <script src="js/ejercicio14.js"></script>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calcular arreglos</h1>
+        <p>Ingresa varios numeros separados por una ","</p>
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="numeros">Numeros:<br></label>
+                <input type="text" id="cadena"oninput="this.value = this.value.replace(/[^0-9, ]/g, '')" name="numeros" placeholder="Ingresa los numeros">
+            </div>
+            <label for="numeros">Resultados:<br></label>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="nmayor" name="nmayor" placeholder="El numero mayor es">
+            </div>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="nmenor" name="nmenor" placeholder="El numero menor es">
+            </div>
+            <div class="grupo-formulario">
+                <input readonly type="text" id="promedio" name="promedio" placeholder="El promedio de los numeros es">
+            </div>
+            <button type="button" onclick="calcular()" class="boton-calcular">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>

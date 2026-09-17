@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-primario: #511f6c; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido interno */
+    text-align: center;   /* Centra los textos */
+    gap: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--color-primario);
+}
+
+.subtitulo {
+    color: #666;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo-formulario {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Espacio exacto entre el label y el input */
+}
+
+.grupo-formulario label {
+    font-weight: 600;
+    color: #333;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center; 
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.grupo-formulario input:focus {
+    border-color: var(--color-primario);
+}
+
+
+.boton-calcular {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: 2px solid #0056b3;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.boton-calcular:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
