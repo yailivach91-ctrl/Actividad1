@@ -18,7 +18,7 @@ function Agregar() {
         calificacion: calificacion
     };
     estudiantes.push(estudiante);
-    alert("Estudiante agregado correctamente: " + nombre);
+    alert("Estudiante agregado  correctamente: " + nombre);
     inputNombre.value = "";
     inputCalificacion.value = "";
     inputNombre.focus();
